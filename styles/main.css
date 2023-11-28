@@ -1,0 +1,88 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 20px;
+}
+@media only screen and (min-width: 680px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 990px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #87C4FF;
+  border: none;
+  box-shadow: 10px;
+}
+button:hover {
+  background-color: #39A7FF;
+}
+button:active {
+  color: white;
+}
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+}
+
+ol {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  background-color: #39A7FF;
+  width: 100%;
+  padding: 10px 30px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  margin: 50px auto;
+  width: 50%;
+  padding: 20px;
+  border-radius: 15px;
+}
+.main__div1 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.main__div2 {
+  display: flex;
+  background-color: #E0F4FF;
+  padding: 10px;
+  border-radius: 7px;
+}
+.main__div3 {
+  display: flex;
+  background-color: #E0F4FF;
+  padding: 10px;
+  border-radius: 7px;
+}
+.main__div4__view-task {
+  display: flex;
+}/*# sourceMappingURL=main.css.map */

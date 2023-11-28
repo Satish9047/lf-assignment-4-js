@@ -1,0 +1,53 @@
+@mixin devices($breakpoint) {
+    @if $breakpoint == 'tablet' {
+      @media only screen and (min-width: 680px) {
+        @content;
+      }
+    }
+  
+    @if $breakpoint == 'desktop' {
+      @media only screen and (min-width: 990px) {
+        @content;
+      }
+    }
+  }
+  
+  h1 {
+    font-size: 20px;
+  
+    @include devices('tablet') {
+      font-size: 24px;
+    }
+  
+    @include devices('desktop') {
+      font-size: 32px;
+    }
+  }
+
+
+
+button{
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: $secondary-color;
+    border: none;
+    box-shadow: 10px;
+    &:hover{
+        background-color: $tertiary-color;
+    }
+    &:active{
+        color: $standard-white;
+    }
+}
+
+input{
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+}
+ol{
+    font-size: 20px;
+    padding: 10px;
+}
+
