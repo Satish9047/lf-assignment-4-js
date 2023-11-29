@@ -1,3 +1,13 @@
+@mixin input-style{
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+}
+
+@mixin task-content{
+
+}
 .main{
     display: flex;
     flex-direction: column;
@@ -22,17 +32,32 @@
         background-color: $primary-color;
         padding: 10px;
         border-radius: 7px;
+        &__input{
+            @include input-style;
+        }
     }
     &__div3{
         display: flex;
         background-color: $primary-color;
         padding: 10px;
         border-radius: 7px;
+        &__input{
+            @include input-style;
+        }
     }
     &__div4{
-
-        &__view-task{
-            display: flex;
+        &__tasklist{
+            @include task-content
+        }
+    }
+    &__div5{
+        &__tasklist{
+            @include task-content
+        }
+    }
+    &__div6{
+        &__tasklist{
+            @include task-content
         }
     }
 }

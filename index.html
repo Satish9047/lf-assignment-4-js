@@ -14,37 +14,24 @@
 
         <div class="container">
         <main class="main">
-            <div class="main__div1">
-                <button>Task</button>
-                <button>Completed</button>
-                <button>Remaining</button>
-            </div>
-
-            <div class="main__div2">
-                <input id="task" placeholder="Search">
-                <button id="search-btn">Search</button>
-            </div>
 
             <div class="main__div3">
-                <input id="new-task" placeholder="create task">
+                <input class="main__div2__input" id="new-task" placeholder="create task">
                 <button id="add-btn">add task here</button>
             </div>  
             
              <!-- list task -->
-            <div class="main__div4">                          
-                <ol id="main__div4__view-task"></ol>
+            <div class="main__div4">
+                <h2>all task</h2>                        
+                <ol class="main__div4__tasklist" id="main__div4__view-task"></ol>
             </div> 
 
             <!-- Completed tasks -->
-            <div class="main__div5" id="completed-tasks" style="display: none;">
-                <h2>Completed Tasks</h2>
-                <ol id="completed-task-list"></ol>
+            <div class="main__div5" id="completed-tasks" >
+                <h2>completed task</h2>
+                <ol class="main__div5__tasklist" id="completed-task-list"></ol>
             </div>
 
-            <div class="main__div6" id="Remaining" style="display: none;">
-                <h2>Remaining Tasks</h2>
-                <ol id="completed-task-list"></ol>
-            </div>
         </main>
     </div>
 
