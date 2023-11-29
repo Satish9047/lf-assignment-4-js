@@ -37,6 +37,14 @@ ol {
   padding: 10px;
 }
 
+li {
+  display: flex;
+  justify-content: space-between;
+  background-color: #E0F4FF;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
