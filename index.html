@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
     <title>Task App</title>
 </head>
-<body>
-   
-        <header class="header">
-            <h1 class="header__h">Task Manager</h1>
-        </header>
 
-        <div class="container">
+<body>
+
+    <header class="header">
+        <h1 class="header__h">Task Manager</h1>
+    </header>
+
+    <div class="container">
         <main class="main">
 
             <div class="main__div3">
                 <input class="main__div2__input" id="new-task" placeholder="create task">
                 <button id="add-btn">add task here</button>
-            </div>  
-            
-             <!-- list task -->
+            </div>
+
+            <!-- list task -->
             <div class="main__div4">
-                <h2>Todo completed-tasks</h2>                        
+                <h2>Todo tasks</h2>
                 <ol class="main__div4__tasklist" id="main__div4__view-task"></ol>
-            </div> 
+            </div>
 
             <!-- Completed tasks -->
-            <div class="main__div5" id="completed-tasks" >
+            <div class="main__div5" id="completed-tasks">
                 <h2>Completed tasks</h2>
                 <ol class="main__div5__tasklist" id="completed-task-list"></ol>
             </div>
@@ -37,4 +39,5 @@
 
     <script src="./index.js"></script>
 </body>
+
 </html>
